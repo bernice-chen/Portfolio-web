@@ -1,7 +1,3 @@
-//cv
-function jump(){
-    window.location.href="../about.html"
-}
 //navbar
 var prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
