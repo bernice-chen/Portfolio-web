@@ -1,0 +1,53 @@
+header{
+    position: relative;
+    .nav{
+        width: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: $warning;
+        z-index: 100;
+        transition: top 0.5s;
+        .container{
+            position: relative;
+        }
+    }
+    .headshot{
+        width: 5rem;
+        border-radius: 50%;
+    }
+    .navlist{
+        display: none;
+        // height: 81vh;
+        height: 100vh;
+        background-color: #faedcd;
+        z-index: 1;
+    }
+    .burgar_btn{
+        position: absolute;
+        right: 2rem;
+        top: 2.75rem;
+    }
+    .fa-solid{
+        display: block;
+        color: $primary;
+    }
+}
+@media screen and (min-width: 1024px) {
+    header{
+        .nav{
+            background-color: $success;
+        }
+        .navlist{
+            display: block;
+            height: auto;
+            position: absolute;
+            top: 3.55rem;
+            right: 2rem;
+            background-color: transparent;
+        }
+        .burgar_btn{
+            display: none;
+        }
+    }
+}

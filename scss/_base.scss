@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap');
+
+*, *::before, *::after{
+	// outline: 1px solid red;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+}
+body{
+	font-family: 'Noto Sans TC', sans-serif;
+	letter-spacing: 1px;
+	line-height: $line-height-base;
+}
+img{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+a{
+	display: inherit;
+	text-decoration: none;
+	color: $primary;
+	&:hover{
+		color: #000;
+	}
+}
+button{
+	border: none;
+	background: none;
+}
+ul{
+	margin: 0;
+	padding: 0;
+}

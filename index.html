@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="./css/index.css">
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/0bd65a2f55.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="./imge/headshot_ico.png" type="image/x-icon">
+    <title>Bernice Chen's Portfolio</title>
+  </head>
+  <body>
+    <div class="page">
+        <header>
+            <nav class="nav" id="navbar">
+                <div class="container g-3">
+                    <div class="row align-items-center py-3">
+                        <div class="col-12">
+                            <a href="index.html" class="d-flex align-items-center">
+                                <h1><img src="./imge/headshot.svg" alt="logo" class="me-2 headshot"></h1>
+                                <span class="fs-7">Bernice Chen</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="navLinks" class="row navlist text-center">
+                        <div class="col-12">
+                            <ul class="d-lg-flex">
+                                <li class="my-6 my-lg-0 me-lg-3"><a href="./about.html">About</a></li>
+                                <li class="mb-6 my-lg-0"><a href="./index.html">Latest Works</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="row py-3 burgar_btn">
+                        <a href="#" class="justify-content-end text-end" onclick="hamBtn(this)">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </a>
+                    </div>
+                </div>
+            </nav>
+            <div class="container g-3">
+                <div class="row align-items-center justify-content-between banner">
+                    <div class="col-12 col-lg-6 pen">
+                        <img src="./imge/pen.svg" alt="banner photo">
+                    </div>
+                    <div class="col-12 col-lg-5">
+                        <div class="txt text-lg-start">
+                            <h2 class="text-primary fw-bold lh-base mb-4">HELLO<br>I'm Bernice</h2>
+                            <p class="fs-5 mb-4">我是一名助理工程師，對UI/UX設計充滿熱情</p>
+                            <button type="button" onclick="jump()" class="btn-primary py-1 px-5 rounded">關於我</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="mt-6 mb-7">
+            <div id="work" class="work">
+                <div class="container g-3">
+                    <h2 class="text-primary text-center mb-5">Latest Works</h2>
+                    <div class="row g-4">
+                        <div class="col-12 col-lg-6">
+                            <a href="./day-care-center.html">
+                                <img src="./imge/fuli.png" alt="phone-mockup" class="mb-3 rounded-3">
+                                <div class="text-center text-lg-start ps-lg-3">
+                                    <h3 class="text-primary fw-bolder mb-2">日間照顧中心</h3>
+                                    <h4 class="text-secondary mb-2">企業網站設計・原型製作</h4>
+                                    <p class="text-primary mb-2">幫助使用者了解日照的服務與資訊</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <a href="./Nongguo.html">
+                                <img src="./imge/nongguo.png" alt="phone-mockup" class="mb-3 rounded-3">
+                                <div class="text-center text-lg-start ps-lg-3">
+                                    <h3 class="text-primary fw-bolder mb-2">小農推廣平台</h3>
+                                    <h4 class="text-secondary mb-2">用戶體驗設計・UX設計</h4>
+                                    <p class="text-primary mb-2">藉由平台讓小農建立自己的品牌</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <a href="./Corporate-website.html">
+                                <img src="./imge/FH.png" alt="phone-mockup" class="mb-3 rounded-3">
+                                <div class="text-center text-lg-start ps-lg-3">
+                                    <h3 class="text-primary fw-bolder mb-2">官網設計</h3>
+                                    <h4 class="text-secondary mb-2">企業網站設計・原型製作</h4>
+                                    <p class="text-primary mb-2">為客戶重新設計網站資訊架構</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-12 col-lg-6">
+                            <a href="./note-website.html">
+                                <img src="./imge/note.png" alt="mac-mockup" class="mb-3 rounded-3">
+                                <div class="text-center text-lg-start ps-lg-3">
+                                    <h3 class="text-primary fw-bolder mb-2">企業通訊系統</h3>
+                                    <h4 class="text-secondary mb-2">原型製作・UI設計</h4>
+                                    <p class="text-primary mb-2">為客戶重新設計系統首頁架構</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="text-center py-3">
+            <div class="container g-3">
+                <p class="fs-7">2022 Bernice Chen, All Rights Reserved.</p>
+                <h4 class="fs-6 mb-2">Let's Connect.</h4>
+                <div class="mail d-flex justify-content-center">
+                    <img src="./imge/footer-mail.png" alt="信箱" class="me-2">
+                    <a href="mailto:bernice19851206@gmail.com">bernice19851206@gmail.com</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap popper JS -->
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/header.js"></script>
+  </body>
+</html>

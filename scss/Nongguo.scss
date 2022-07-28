@@ -1,0 +1,161 @@
+@import "reset";
+@import "bootstrap/bootstrap";
+
+@import "base";
+@import "header";
+@import "footer";
+
+main{
+    .introduction{
+        p{
+            font-size: $h5-font-size;
+        }
+    }
+    .container{
+        position: relative;
+        overflow: hidden;
+    }
+    h3{
+        font-size: $h3-font-size;
+        &::after{
+            content: "";
+            position: absolute;
+            border: 1px solid #414833;
+            width: 100%;
+            margin: 2.7rem 1.5rem 0 1rem;
+        }
+    }
+    h4{
+        font-size: $h6-font-size;
+        line-height: $line-height-lg;
+        text-align: justify;
+    }
+    .graphic{
+        p{
+            font-size: $h4-font-size;
+            color: $danger;
+        }
+    }
+    .backstory{
+        a{
+            display: inline;
+            color: $danger;
+        }
+    }
+    .logo{
+        img{
+            width: 60%;
+        }
+    }
+    .font-design{
+        img{
+            width: 75%;
+        }
+    }
+    button{
+        display: block;
+        margin: 0 auto;
+        font-size: $h6-font-size;
+        letter-spacing: 1px;
+    }
+    .change{
+        border: 2px solid #17C3B2;
+        background-color: #17C3B2;
+    }
+    .cancel{
+        padding: 4px 0;
+        background-color: #bb9590;
+    }
+    .login{
+        padding: 4px 0;
+    }
+    .color-1, .color-2,
+    .color-3, .color-4{
+        width: 8rem;
+        height: 8rem;
+    }
+    .color-1 h4, .color-2 h4,
+    .color-3 h4, .color-4 h4{
+        line-height: 8rem;
+        font-size: $h7-font-size;
+    }
+    .color-2{
+        background-color: #F6BD60;
+    }
+    .color-3{
+        background-color: #F7F6F2;
+    }
+    .color-4{
+        background-color: #17C3B2;
+    }
+    .video-design{
+        video{
+            width: 100%;
+        }
+        .txt{
+            position: relative;
+        }
+        h4{
+            margin-left: 3rem;
+            &::before{
+                content: "";
+                width: 5px;
+                height: 5px;
+                background-color: #9f9f9f;
+                position: absolute;
+                left: 2rem;
+                margin: 1.5rem auto;
+            }
+        }
+        p{
+            font-size: $h4-font-size;
+            color: $danger;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    main{
+        .banner{
+            img{
+                width: 100%;
+                height: 48vw;
+                object-fit: cover;
+                object-position: 0 70%;
+            }
+        }
+        .video-design{
+            h4{
+                margin-left: 3.5rem;
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    main{
+        .banner{
+            img{
+                height: 44vw;
+            }
+        }
+        .logo{
+            img{
+                width: 100%;
+            }
+        }
+        .font-design{
+            img{
+                width: 100%;
+            }
+        }
+        .color-1, .color-2,
+        .color-3, .color-4{
+            width: 7rem;
+            height: 7rem;
+        }
+        .color-1 h4, .color-2 h4,
+        .color-3 h4, .color-4 h4{
+            line-height: 7rem;
+            font-size: 1.4rem;
+        }
+    }
+}
